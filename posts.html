@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Posts</title>
+    <link rel="stylesheet" href="./styles/posts_style.css" />
+  </head>
+  <body>
+    <div class="front">
+      <div class="top">
+        <div class="image">
+          <img src="./Assets/2022.png" alt="logo here" />
+        </div>
+
+        <div class="nav">
+          <a href="index.html">Home</a>
+          <a href="posts.html" >Posts</a>
+          <a href="get_featured.html" target="_blank">Post Yourself</a>
+          <a href="creators.html" >Creators</a>
+        </div>
+      </div>
+    </div>
+    <div class="main">
+      <div class="searchbar">
+        Posts
+        <input
+          id="searchbar"
+          onkeyup="search_animal()"
+          type="text"
+          name="search"
+          placeholder="Search Person..."
+        />
+      </div>
+
+      <div class="posts">
+        <div class="post">
+          <img src="./Assets/deepak_profile.jpeg" alt="image here" class="profile_pic" />
+          <div class="about">
+            <h2>Deepak yadav</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, cumque ea blanditiis minus vero vel, animi ipsum numquam, nostrum quia asperiores cum totam debitis in tenetur obcaecati consequatur sequi!
+            </p>
+          </div>
+        </div>
+
+        <div class="post">
+          <img src="./Assets/deepak_profile.jpeg" alt="image here" class="profile_pic" />
+
+          <div class="about">
+            <h2>Name_here</h2>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis
+              voluptate quae eum alias fugit reprehenderit sint beatae
+              temporibus assumenda vitae? Dolorem hic ipsum maxime consequatur
+              fugiat ex facilis amet odio?
+            </p>
+          </div>
+        </div>
+
+
+        <div class="post">
+          <img src="./Assets/deepak_profile.jpeg" alt="image here" class="profile_pic" />
+          <div class="about">
+            <h2>Name_here</h2>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis
+              voluptate quae eum alias fugit reprehenderit sint beatae
+              temporibus assumenda vitae? Dolorem hic ipsum maxime consequatur
+              fugiat ex facilis amet odio?
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      function search_animal() {
+        let input = document.getElementById("searchbar").value;
+        input = input.toLowerCase();
+        let x = document.getElementsByClassName("post");
+        let y = document.getElementsByTagName("h2");
+        
+
+        for (i = 0; i < x.length; i++) {
+          if (!y[i].innerHTML.toLowerCase().includes(input)) {
+            x[i].style.display = "none";
+          } else {
+            x[i].style.display = "flex";
+          }
+        }
+      }
+    </script>
+  </body>
+</html>

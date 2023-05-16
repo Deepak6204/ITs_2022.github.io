@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Get Featured</title>
+    <script src="https://use.fontawesome.com/3a2eaf6206.js"></script>
+    <link rel="stylesheet" href="./styles/post_yourself_styles.css" />
+  </head>
+  <body>
+    <div class="front">
+      <div class="top">
+        <div class="image">
+          <img src= "/Assets/2022.png" alt="logo here" />
+        </div>
+
+        <div class="nav">
+          <a href="index.html">Home</a>
+          <a href="posts.html" >Posts</a>
+          <a href="get_featured.html" target="_blank">Post Yourself</a>
+          <a href="creators.html" >Creators</a>
+        </div>
+      </div>
+    </div>
+
+    <form>
+      <center>
+        <h1>Post Details</h1>
+        <main>
+          <p>
+            <label for="name"></label>
+            <input
+              autocomplete="off"
+              type="text"
+              name="name"
+              placeholder="Your name here"
+              id="name"
+            />
+          </p>
+          <p>
+            <label for="email"></label>
+            <input
+              autocomplete="off"
+              type="email"
+              name="email"
+              placeholder="Your Email here"
+              id="email"
+            />
+          </p>
+          <p>
+            <input
+              autocomplete="off"
+              type="url"
+              id="insta-link"
+              placeholder="Insta Profile Link"
+            />
+          </p>
+          <p>
+            <textarea
+              autocomplete="off"
+              name="message"
+              id="msg"
+              cols="30"
+              rows="10"
+              placeholder="Some Lines about You"
+            ></textarea>
+          </p>
+          <div>
+            <label for="inputTag">
+              <span>Profile Pic</span>
+              <i class="fa fa-2x fa-camera"></i>
+              <input id="inputTag" type="file"/>
+              <span id="imageName"></span>
+            </label>
+          </div>
+        </main>
+
+        <footer>
+          <p><input type="submit" /></p>
+        </footer>
+      </center>
+    </form>
+    <script>
+      let input = document.getElementById("inputTag");
+      let imageName = document.getElementById("imageName")
+
+      input.addEventListener("change", ()=>{
+          let inputImage = document.querySelector("input[type=file]").files[0];
+
+          imageName.innerText = inputImage.name;
+      })
+  </script>
+  </body>
+</html>

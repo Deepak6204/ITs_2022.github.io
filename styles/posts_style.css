@@ -1,0 +1,108 @@
+*{
+    box-sizing: border-box;
+    margin: 0px auto;
+    color: rgba(245, 245, 245, 0.825);
+    font-family:'Raleway', sans-serif;
+}
+
+body{
+    /* change image here */ 
+    background: url("../Assets/creator_background.jpg");
+    background-size: 100vw 100vh;
+    background: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.content,.main{
+    margin-top: 100px;
+    max-width: 1100px;
+    width: 90%;
+    height: 100%;
+    text-align: center;
+    font-size: 30px;
+}
+.main{
+    margin-top: 20px;
+}
+
+.front{
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.745);
+    position: sticky;
+    top: 0px;
+}
+
+.top{
+    width: 90%;
+    max-width: 1100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.image,.nav{
+    margin:10px;
+    padding-top: 10px; 
+}
+
+img{
+    width: 150px;
+}
+
+.nav a{
+    text-decoration: none;
+    padding: 10px 20px 10px 20px;
+    font-size: 25px;
+}
+
+.nav a:hover{
+    background-color: rgba(245, 245, 245, 0.288);
+    border-radius: 10px;
+}
+.searchbar{
+    display: flex;
+}
+#searchbar{
+    margin-right: 0px;
+    padding: 10px;
+    border-radius: 10px;
+    color: black;
+}
+
+input[type=text] { 
+    width: 30%; 
+    -webkit-transition: width 0.15s ease-in-out; 
+    transition: width 0.15s ease-in-out; 
+}
+
+input[type = "text"]:focus{
+    width: 70%;
+}
+
+.post{
+    margin-top: 30px;
+    display: flex;
+    height: 70vh;
+    text-align: left;
+}
+
+.profile_pic{
+    float: left;
+    border-radius: 10%;
+    width: 200px;
+    height: 200px;
+    margin-right: 20px;
+}
+
+hr{
+    margin: 20px 0 20px 0;
+}
+
+h1{
+    font-size: 40px;
+}
+
+p{
+    font-size: 20px;
+}

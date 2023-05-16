@@ -1,0 +1,61 @@
+*{
+    box-sizing: border-box;
+    margin: 0px auto;
+    color: whitesmoke;
+    font-family:'Raleway', sans-serif;;
+}
+
+body{
+    background: url("../Assets/home_page.jpeg");
+    background-size:cover;
+}
+
+.front{
+    max-width: 1100px;
+    width: 90%;
+}
+
+.top{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.image,.nav{
+    margin:10px;
+    padding-top: 10px;
+}
+img{
+    width: 150px;
+}
+
+.nav a{
+    text-decoration: none;
+    padding: 10px 20px 10px 20px;
+    font-size: 25px;
+}
+
+.nav a:hover{
+    background-color: rgba(245, 245, 245, 0.288);
+    border-radius: 10px;
+}
+
+
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    height: 90vh;
+}
+
+h1{
+    font-size: 55px;
+    font-weight: 200;
+    font-weight: 600;
+
+}
+
+p{
+    font-size: 20px;
+}
