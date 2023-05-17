@@ -43,7 +43,15 @@ body{
 
 .image,.nav{
     margin:10px;
-    padding-top: 10px; 
+    padding-top: 10px;
+}
+
+.image{
+    transition: opacity 1s ease;
+}
+
+.image:hover{
+    opacity: 50%;
 }
 
 img{
@@ -60,14 +68,18 @@ img{
     background-color: rgba(245, 245, 245, 0.288);
     border-radius: 10px;
 }
-.searchbar{
-    display: flex;
-}
+
 #searchbar{
     margin-right: 0px;
     padding: 10px;
     border-radius: 10px;
     color: black;
+    outline: none;
+    border: 0px;
+}
+
+.searchbar{
+    text-align: right;
 }
 
 input[type=text] { 
@@ -76,20 +88,23 @@ input[type=text] {
     transition: width 0.15s ease-in-out; 
 }
 
-input[type = "text"]:focus{
-    width: 70%;
+input[type = "text"]:hover{
+    width: 50%;
+    cursor: auto    ;
 }
 
 .post{
     margin-top: 30px;
     display: flex;
-    height: 70vh;
     text-align: left;
+    background-color:rgba(255, 248, 220, 0.521);
+    padding: 30px;
+    border-radius: 5px;
 }
 
 .profile_pic{
     float: left;
-    border-radius: 10%;
+    border-radius: 2%;
     width: 200px;
     height: 200px;
     margin-right: 20px;
@@ -106,3 +121,47 @@ h1{
 p{
     font-size: 20px;
 }
+
+.left-part{
+    display: flex;
+    flex-direction: column;
+}
+
+.social-handles{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+.social-handles a{
+    text-decoration: none;
+    margin: 5px 0 5px 0;
+}
+
+.insta-handle{
+    background: -webkit-linear-gradient(#405DE6,#5B51D8,#833AB4,#C13584,#E1306C,#FD1D1D,#F56040,#F77737,#FCAF45,#FFDC80);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-right: 10px;
+  }
+  
+  .linkedin{
+      background-color: #0A66C2;
+      color: white;
+      padding: 0px 4px 0 4px;
+      margin-right: 10px;
+      border-radius: 2px;
+  }
+  
+  .linkedin-handle{
+      color: #0A66C2;
+  }
+
+  p,h2{
+    color: black;
+    font-size: 22px;
+  }
+
+  h2{
+    font-size: 60px;
+  }
