@@ -1,27 +1,37 @@
-*{
+* {
     box-sizing: border-box;
     margin: 0px auto;
 }
 
-header{
+body {
+    scroll-behavior: smooth;
+}
+
+header {
     background: url(../Assets/2022.png) no-repeat center;
     background-size: 500px;
 
-    
+
     background-color: rgba(0, 0, 0, 0.301);
     height: 300px;
+    box-shadow: 0px 10px 10px rgba(128, 128, 128, 0.600);
+
 }
 
-main{
-    position:relative;
+main {
+    position: relative;
     background-color: #179EB3;
 }
 
-.logo{
+.logo {
     display: flex;
 }
 
-nav{
+.links a.active{
+    color: #f0e100;
+}
+
+nav {
     display: flex;
     background-color: #0e131f00;
     transition: background-color 1s ease;
@@ -30,27 +40,25 @@ nav{
     top: 0px;
 }
 
-.text{
+.text {
     width: 80%;
     max-width: 1000px;
 }
 
-nav:hover{
+nav:hover {
     background-color: rgba(14, 19, 31, 0.900) !important;
 }
 
-nav a:hover{
+nav a:hover, nav a:focus {
     color: #F0E100;
     font-size: 25px;
 }
 
-.links,.searchbar
-{
+.links, .searchbar {
     padding-top: 20px;
 }
 
-#searchbar
-{
+#searchbar {
     border-radius: 10px;
     width: 200px;
     padding: 7px;
@@ -59,11 +67,11 @@ nav a:hover{
     transition: width 1s ease;
 }
 
-#searchbar:hover{
+#searchbar:hover {
     width: 500px;
 }
 
-nav a{
+nav a {
     margin: 20px;
     text-decoration: none;
     font-size: 20px;
@@ -71,13 +79,93 @@ nav a{
     transition: font-size 1s ease;
 }
 
-.name{
+.name {
     margin: 7px 0 10px 10px;
     color: white;
 }
 
-img{
+img {
     width: 70px;
     height: 70px;
 }
+
+/* post design from here */
+
+.posts {
+    width: 75%;
+    max-width: 1300px;
+}
+
+.post h1 {
+    margin: 10px 0 30px 0;
+}
+
+.outer-box {
+    display: flex;
+}
+
+.social {
+    display: flex;
+    flex-direction: column;
+    margin-top: 120px;
+}
+
+.left_social {
+    flex-direction: row-reverse;
+}
+
+.postl, .postr {
+    margin: 120px;
+    margin-bottom: 60px;
+    width: 90%;
+    float: left;
+    font-size: 30px;
+    padding: 10px;
+    padding-bottom: 30px;
+    box-shadow: 10px 10px 20px grey;
+    border-radius: 10px;
+    margin-right: 30px;
+}
+
+#l, #r {
+    margin: 10px;
+    float: right;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+#r {
+    float: left;
+}
+
+.postr {
+    float: right;
+    margin-left: 20px;
+    box-shadow: -10px 10px 20px grey;
+}
+
+.logo-insta, .logo-linkedin {
+    font-size: 60px;
+    margin-bottom: 20px;
+}
+
+.logo-insta {
+    background: -webkit-linear-gradient(#405DE6, #5B51D8, #833AB4, #C13584, #E1306C, #FD1D1D, #F56040, #F77737, #FCAF45, #FFDC80);
+    background-clip: border-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.logo-linkedin {
+    background-color: #0b66c3;
+    background-clip: border-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+
+
+
 

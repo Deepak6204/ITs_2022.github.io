@@ -1,60 +1,93 @@
-*{
+* {
     box-sizing: border-box;
-    margin: 0px auto;
-    color: whitesmoke;
-    font-family:'Raleway', sans-serif;;
+    margin: 0px;
+    padding: 0px;
 }
 
-body{
-    background: url("../Assets/home_page.jpeg");
-    background-size:cover;
-}
-
-.front{
-    max-width: 1100px;
-    width: 90%;
-}
-
-.top{
+body {
+    scroll-behavior: smooth;
+    height: 100vh;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    flex-direction: column;
+    background: url(../Assets/background.jpeg);
+    background-size: cover;
 }
 
-.image,.nav{
-    margin:10px;
-    padding-top: 10px;
+
+.logo {
+    display: flex;
+    
 }
-img{
+
+nav {
+    display: flex;
+    background-color: #0e131f00;
+    transition: background-color 1s ease;
+    position: sticky;
+    width: 100%;
+    justify-content: space-between;
+    padding: 5px 120px 5px 120px;
+    top: 0px;
+}
+
+.links a.active{
+    color: #f0e100;
+}
+
+
+nav a:hover, nav a:focus {
+    color: #F0E100;
+    font-size: 25px;
+
+}
+
+.links {
+    padding-top: 20px;
+}
+
+
+
+nav a {
+    margin: 20px;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    transition: font-size 1s ease;
+}
+
+.name {
+    margin: 7px 0 10px 10px;
+    color: white;
+}
+
+img {
+    margin-top: 10px;
     width: 150px;
 }
 
-.nav a{
-    text-decoration: none;
-    padding: 10px 20px 10px 20px;
-    font-size: 25px;
-}
+/* body styling */
 
-.nav a:hover{
-    background-color: rgba(245, 245, 245, 0.288);
-    border-radius: 10px;
-}
-
-
-
-main{
+.container{
     display: flex;
+    color: white;
     flex-direction: column;
-    justify-content:center;
-    height: 90vh;
+    height: 100%;
+    justify-content: center;
+    padding: 0 120px 0 120px;
+    position: relative;
+    animation: pop-in 2s;
 }
 
-h1{
-    font-size: 55px;
-    font-weight: 500;
-
+.container p{
+    font-size: 30px;
+}
+.container h1{
+    font-size: 60px;
 }
 
-p{
-    font-size: 20px;
+/* keyframes starts here */
+
+@keyframes pop-in{
+    0%{top:-220px}
+    100%{top:0px}
 }
