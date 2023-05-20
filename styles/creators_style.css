@@ -3,6 +3,7 @@
     margin: 0px auto;
     color: rgba(245, 245, 245, 0.825);
     font-family:'Raleway', sans-serif;
+    scroll-behavior: smooth;
 }
 
 body{
@@ -14,7 +15,8 @@ body{
 }
 
 .content{
-    margin-top: 100px;
+    padding-top: 100px;
+    margin-bottom: 300px;
     max-width: 1100px;
     width: 90%;
     height: 100%;
@@ -22,39 +24,79 @@ body{
     font-size: 30px;
 }
 
-.front{
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.745);
+body {
+    scroll-behavior: smooth;
+}
+
+header {
+    background: url(../Assets/2022.png) no-repeat center;
+    background-size: 500px;
+
+
+    background-color: rgba(0, 0, 0, 0.301);
+    height: 300px;
+    box-shadow: 0px 10px 10px rgba(128, 128, 128, 0.600);
+
+}
+
+main {
+    position: relative;
+    background-color: #179EB3;
+}
+
+.logo {
+    display: flex;
+}
+
+.links a.active{
+    color: #f0e100;
+}
+
+nav {
+    display: flex;
+    background-color: #0e131f00;
+    transition: background-color 0.5s ease;
     position: sticky;
+    width: 100%;
     top: 0px;
 }
 
-.top{
-    width: 90%;
-    max-width: 1100px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+.text {
+    width: 80%;
+    max-width: 1000px;
 }
 
-.image,.nav{
-    margin:10px;
-    padding-top: 10px; 
+nav:hover {
+    background-color: rgba(14, 19, 31, 0.900) !important;
 }
 
-img{
-    width: 150px;
-}
-
-.nav a{
-    text-decoration: none;
-    padding: 10px 20px 10px 20px;
+nav a:hover, nav a:focus {
+    color: #F0E100;
     font-size: 25px;
 }
 
-.nav a:hover{
-    background-color: rgba(245, 245, 245, 0.288);
-    border-radius: 10px;
+.links {
+    padding-top: 20px;
+}
+
+
+
+nav a {
+    margin: 20px;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    transition: font-size 0.4s ease;
+}
+
+.name {
+    margin: 7px 0 10px 10px;
+    color: white;
+}
+
+.logo img {
+    width: 70px;
+    height: 70px;
 }
 
 main{
@@ -64,14 +106,12 @@ main{
     height: 90vh;
 }
 
-
-
 p{
     font-size: 20px;
 }
 
 .content img{
-    width: 300px;
+    width: 200px;
     border-radius: 50%;
     margin: 10px 10px 20px 10px;
 }
@@ -108,9 +148,46 @@ p{
     margin: 10px;
 }
 
-h1{
+.content h1{
+    font-size: 50px;
     text-transform: uppercase;
     word-spacing: 20px;
     letter-spacing: 5px;
     font-weight: 500;
+}
+
+.creators{
+    margin-top: 120px;
+    margin-bottom: 300px;
+    width: 80%;
+    display: flex;
+    height: 500px;
+}
+
+.creator{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    width: 20%;
+    border-radius: 6px;
+    /* box-shadow: 10px 10px 10px rgba(255, 255, 255, 0.566); */
+    text-decoration: none;
+    font-size: 15px;
+    transition: box-shadow 0.3s ease;
+}
+
+.creator:hover{
+    box-shadow:  10px 10px 10px rgba(255, 255, 255, 0.566);
+}
+
+.creator img{
+    margin-top: 2.5%;
+    margin-bottom: 5%;
+    width: 95%;
+    border-radius: 6px;
+}
+
+.creator h1,.creator p{
+    color: rgba(0, 0, 0, 0.666);
+    text-align: left;
 }

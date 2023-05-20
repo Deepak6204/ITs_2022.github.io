@@ -10,35 +10,49 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
     <link rel="stylesheet" href="./styles/creators_style.css" />
-    <style>
-      a[href = "creators.html"]{
-        background-color: whitesmoke;
-        color: black;
-        border-radius: 10px;
-      }
-      .nav a[href = "creators.html"]:hover{
-        background-color: whitesmoke;
-        border-radius: 10px;
-      }
-    </style>
   </head>
   <body>
-    <div class="front">
-      <div class="top">
-        <div class="image">
-          <img src="./Assets/2022.png" alt="logo here" />
-        </div>
-
-        <div class="nav">
-          <a href="index.html">Home</a>
-          <a href="posts.html" >Posts</a>
-          <a href="get_featured.html" target="_blank">Post Yourself</a>
-          <a href="creators.html" >Creators</a>
+    <nav>
+      <!-- logo here -->
+      <div class="logo">
+        <img src="./Assets/logo_white.png" alt="logo here" />
+        <div class="name">
+          <h1>2022</h1>
+          <p>Inspiring Young Brains</p>
         </div>
       </div>
+      <!-- logo ends here -->
+      <!-- navgation links start -->
+      <div class="links">
+        <a href="index.html">Home</a>
+        <a  href="posts.html">Posts</a>
+        <a href="get_featured.html">Post yourself</a>
+        <a class = "active" href="creators.html">Creators</a>
+      </div>
+      <!-- navigation link end -->
+    </nav>
+    <!-- this is dummy main -->
+    <div id="main"></div>
+    <div class="creators">
+      <a class="creator" href="#dev">
+        <img src="./Assets/gaurav_potrait.jpg" alt="">
+      <h1>DEV KARAN</h1>
+      <p>Graphic Artist</p>
+      </a>
+      
+      <a class="creator"  href="#gaurav">
+        <img src="./Assets/gaurav_potrait.jpg" alt="">
+      <h1>GAURAV VYAS</h1>
+      <p>Media Manager</p>
+      </a>
+      <a class="creator" href="#deepak">
+        <img src="./Assets/deepak_potrait.jpeg" alt="">
+      <h1>DEEPAK YADAV</h1>
+      <p>Devleoper</p>
+      </a>
     </div>
 
-    <div class="content">
+    <div class="content" id = "deepak">
       <img src="./Assets/deepak_profile.jpeg" alt="creator pic here" />
       <h1>Deepak yadav</h1>
       <div class="social-media">
@@ -53,9 +67,6 @@
           target="_blank"
           class="li-handle"
           ><i class="fa fa-linkedin linkedin"></i>Linkedin</a
-        >|
-        <a href="#" target="_blank" class="gt-handle"
-          ><i class="fa fa-github github"></i>Github</a
         >
       </div>
       <p>
@@ -73,17 +84,15 @@
       </p>
     </div>
 
-    <div class="content">
-      <img src="./Assets/2022.png" alt="creator pic here" />
+    <div class="content"  id = "gaurav">
+      <img src="./Assets/gaurav_profile.jpg" alt="creator pic here" />
+      <h1>Gaurav Vyas</h1>
       <div class="social-media">
-        <a href="#" target="_blank" class="insta-handle"
+        <a href="https://instagram.com/gaurav__1869" target="_blank" class="insta-handle"
           ><i class="fa fa-instagram insta-handle"></i>Instagram</a
         >|
-        <a href="#" target="_blank" class="li-handle"
+        <a href="https://www.linkedin.com/in/gaurav-vyas-b708a5277/" target="_blank" class="li-handle"
           ><i class="fa fa-linkedin linkedin"></i>Linkedin</a
-        >|
-        <a href="#" target="_blank" class="gt-handle"
-          ><i class="fa fa-github github"></i>Github</a
         >
       </div>
       <p>
@@ -100,5 +109,36 @@
         odit iure ut, cum, delectus laudantium rerum error in.
       </p>
     </div>
+
+
+    <div class="content" id = "dev">
+      <img src="./Assets/dev.jpg" alt="creator pic here" />
+      <h1>Dev Karan</h1>
+      <div class="social-media">
+        <a href="https://instagram.com/__devkaran" target="_blank" class="insta-handle"
+          ><i class="fa fa-instagram insta-handle"></i>Instagram</a
+        >|
+        <a href="https://www.linkedin.com/in/dev-karan-b08569272" target="_blank" class="li-handle"
+          ><i class="fa fa-linkedin linkedin"></i>Linkedin</a
+        >
+      </div>
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod
+        repellendus tempora eum labore architecto neque quasi at odit natus.
+        Voluptatum maiores cumque assumenda voluptas, sit sunt quam sequi
+        laborum error officia nemo veritatis, consequatur eveniet ipsum, commodi
+        corrupti dolorem! Atque odit iste sequi laudantium in aspernatur
+        voluptate eius itaque quia ipsa! Id accusantium error architecto
+        provident corporis ratione, omnis laborum fugit veniam sed aspernatur,
+        voluptas adipisci animi iste, a quibusdam tempora culpa laboriosam
+        repellendus tempore earum doloribus? Nemo explicabo omnis laborum
+        blanditiis iusto. Eos officia quae doloremque quia, doloribus ipsam sed
+        odit iure ut, cum, delectus laudantium rerum error in.
+      </p>
+    </div>
+
+
+
+    <script src="./scripts/navbar.js"></script>
   </body>
 </html>
