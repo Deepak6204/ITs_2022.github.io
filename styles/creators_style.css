@@ -170,24 +170,31 @@ p{
     background-color: white;
     width: 20%;
     border-radius: 6px;
-    /* box-shadow: 10px 10px 10px rgba(255, 255, 255, 0.566); */
-    text-decoration: none;
     font-size: 15px;
     transition: box-shadow 0.3s ease;
+    height:fit-content;
 }
 
 .creator:hover{
     box-shadow:  10px 10px 10px rgba(255, 255, 255, 0.566);
 }
 
+.creator a{
+    text-align: center;
+    text-decoration: none;
+}
+
 .creator img{
     margin-top: 2.5%;
-    margin-bottom: 5%;
+    margin-bottom: 2.5%;
     width: 95%;
     border-radius: 6px;
 }
 
 .creator h1,.creator p{
     color: rgba(0, 0, 0, 0.666);
-    text-align: left;
+}
+
+.creator p{
+    margin-bottom: 2.5%;
 }
